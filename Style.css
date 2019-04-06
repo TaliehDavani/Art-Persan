@@ -1,0 +1,132 @@
+	   * {
+	        box-sizing: border-box;
+            }
+
+			header, section, footer, aside, nav, article, figure, figcaption {
+				display: block;}
+			body {
+				
+				background-color: #f9f8f6;
+	        font-family: Arial, Helvetica, sans-serif;
+				line-height: 1.4em;
+				margin: 0px;}
+			/* Style the header */
+			header {
+				height: 160px;
+                background-image: url("images/image13.jpg");
+				background-repeat :no-repeat;
+				}
+				h1 {
+				text-indent: 10px;
+				width: 940px;
+				height: 130px;
+				margin: 0px;
+				color:#000000;}
+			/* Create two columns/boxes that floats next to each other */
+			nav, footer {
+				clear: both;
+				color: #ffffff;
+				background-color: #aeaca8;
+				height: 30px;}
+				/* Style the list inside the menu */
+			nav ul {
+				margin: 0px;
+				padding: 5px 0px 5px 30px;}
+			nav li {
+				display: inline;
+				margin-right: 40px;}
+			nav li a {
+				color: #ffffff;}
+			nav li a:hover, nav li a.current {
+				color: #000000;}
+			section.art {
+		
+				width: 659px;
+				border-left: 1px solid #eeeeee;
+				float:right ;}
+			section.space{
+				padding: 0px 0px 0px 20px;}
+             	/* Clear the columns */		
+			article {
+				clear: both;
+				width: 100%;}
+			hgroup {
+				margin-top: 40px;}
+			figure {
+				float: left;
+				width: 290px;
+				height: 220px;
+				padding: 5px;
+				margin: 20px;
+				border: 1px solid #eeeeee;}
+			figcaption {
+				font-size: 90%;
+				text-align: left;}
+			aside {
+				width: 750px;
+				float: left;
+				padding: 0px 0px 0px 20px;}
+			section a {
+				display: block;
+				padding: 10px;
+				}
+			 section a:hover {
+				color: #985d6a;
+				background-color: #efefef;}
+			a {
+				color: #de6581;
+				text-decoration: none;}
+			p {
+			color: #000000;}
+			h1, h2, h3 {
+				font-weight: normal;}
+			h2 {
+				margin: 10px 0px 5px 0px;
+				padding: 0px;
+				color: #852e25;}
+			h3 {
+				margin: 0px 0px 10px 0px;
+				color: #07b2c3;}
+			aside h2 {
+				padding: 30px 0px 10px 0px;
+				color: #852e25;}
+				.space{
+				margin: 10px 0px 10px 0px;
+
+				}
+				/* Style the footer */
+				footer {
+		     position: auto;
+		     left: 0;
+		     bottom: 0;
+		      width: 100%; 
+		     }
+			 #footer {
+		    position: fixed;
+		    left: 0;
+		    bottom: 0;
+		    width: 100%; 
+            }
+			table {
+				  width:100%;
+				}
+			table, th, td {
+				  border: 1px solid black;
+				  border-collapse: collapse;
+				}
+			th, td {
+				  padding: 15px;
+				  text-align: left;
+				}
+			table th {
+				  background-color: #0056a1;
+				  color: white;
+				}
+			
+				/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+				@media (max-width: 600px) {
+				  nav, article {
+					width: 100%;
+					height: auto;
+				}
+				}
